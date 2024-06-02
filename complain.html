@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complain Box</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        .bahar h1{
+            color: rgb(255, 238, 3);
+        }
+
+        .container {
+            height: 700px;
+            width: 310px;
+            background-color: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+        }
+
+        h1 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .nm{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: rgb(31, 88, 88);
+
+        }
+
+
+        @media (max-width: 600px) {
+            .container {
+                width: fit-content;
+            }
+            input{
+                width: 100%;
+            }
+
+        }
+
+        @media (max-width: 1000px) {
+            .container {
+                width: 100%;
+            }
+            input{
+                width: 100%;
+            }
+
+        }
+
+        @media (min-width: 1000px) {
+            .container {
+                width: 100%;
+            }
+            input{
+                width: 100%;
+            }
+
+
+        }
+
+        .inner_1 {
+            height: 630px;
+            width: 310px;
+            background-color: none;
+            border: 3px solid black;
+            border-radius: 20px;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+
+        }
+/* 
+        .inner_1{
+           
+            align-items: center;
+            justify-content: center;
+        } */
+
+        .form_1{
+            display: inline-block;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+            position: relative;
+        }
+        .form_1 h2{
+            color: red;
+        }
+        input{
+            width: 100%;
+            height: 30px;
+        }
+        .submit{
+            width: 110px;
+            background-color: #fff;
+            border: 2px solid aqua;
+            border-radius: 8px;
+            transition: 0.4s;
+            font-size: 12px;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .submit:hover{
+            color: whitesmoke;
+            background-color: black;
+            border: 2px solid rgb(77, 255, 0);
+            font-size: 13px;
+            font-weight: bold;
+
+        }
+
+    </style>
+</head>
+
+<body>
+        <div class="bahar">
+        <h1>Complaint form</h1>
+        <p class="nm">the Complaint Form to provide an outletfor your<br> customers to voice their<br> displeasure so you
+            can
+            fix the problem.</p>
+        </div>
+        <hr>
+        <div class="container">
+           <div class="inner_1">
+            <form class="form_1">
+                <h2>Please fill it.</h2>
+                <hr>
+
+                <label for="Full name">Full name :-</label><br><br>
+                <input class="one" type="text" placeholder="Your full name.." required><br><br>
+
+                <label for="Email address">Email address :-</label><br><br>
+                <input class="one" type="text" placeholder="Your email address.." required><br><br>
+
+                <label for="phone no.">phone no. :-</label><br><br>
+                <input class="one" type="telephone" placeholder="phone no.." required><br><br>
+
+                <label for="complaint">Complaint</label><br><br>
+                <textarea rows="6" cols="30" name="complaint" id="complaint"
+                    placeholder="Please describe.."
+                    required=""></textarea>
+
+                    <input class="submit" type="submit" value="File Complaint">
+            </form>
+        </div>
+        </div>
+
+</body>
+
+</html>
